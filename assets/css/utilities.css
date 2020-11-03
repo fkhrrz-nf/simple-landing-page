@@ -1,0 +1,67 @@
+/* Background Colors */
+.bg-red { background: #FF3D3D !important }
+.bg-green { background: #3DFF3D !important }
+.bg-blue { background: #3D3DFF !important }
+.bg-lightblue { background: #5F5FFF !important }
+.bg-yellow { background: #FFFF3D !important }
+.bg-cyan { background: #3DFFFF !important }
+.bg-black { background: #000000 !important }
+.bg-grey { background: #3D3D3D !important }
+.bg-silver { background: #DDDDDD !important }
+.bg-maroon { background: #8D1C1C !important }
+.bg-purple { background: #8D1C8D !important }
+.bg-orange { background: #FFBB3D !important }
+.bg-pink { background: #FFA6C1 !important }
+
+/* Font Color */
+.txt-red { color: #FF3D3D !important }
+.txt-green { color: #3DFF3D !important }
+.txt-blue { color: #3D3DFF !important }
+.txt-yellow { color: #FFFF3D !important }
+.txt-cyan { color: #3DFFFF !important }
+.txt-black { color: #000000 !important }
+.txt-grey { color: #3D3D3D !important }
+.txt-silver { color: #DDDDDD !important }
+.txt-maroon { color: #8D1C1C !important }
+.txt-purple { color: #8D1C8D !important }
+.txt-orange { color: #FFBB3D !important }
+.txt-pink { color: #FFA6C1 !important }
+
+/* Heights */
+.vh-10 { height: 10vh }
+.vh-20 { height: 20vh }
+.vh-30 { height: 30vh }
+.vh-40 { height: 40vh }
+.vh-50 { height: 50vh }
+.vh-60 { height: 60vh }
+.vh-70 { height: 70vh }
+.vh-80 { height: 80vh }
+.vh-90 { height: 90vh }
+.vh-100 { height: 100vh }
+
+/* Widths*/
+.vw-10 { width: 10vw }
+.vw-20 { width: 20vw }
+.vw-30 { width: 30vw }
+.vw-40 { width: 40vw }
+.vw-50 { width: 50vw }
+.vw-60 { width: 60vw }
+.vw-70 { width: 70vw }
+.vw-80 { width: 80vw }
+.vw-90 { width: 90vw }
+.vw-100 { width: 100vw }
+
+/* Responsive Grid */
+[class*="col-"] {float: left;}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
