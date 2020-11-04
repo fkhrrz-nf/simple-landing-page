@@ -13,6 +13,7 @@ ul {
 
 a {
     text-decoration: none;
+    color: #ffffff;
 }
 
 .container {
@@ -26,40 +27,80 @@ a {
     color: #FFFFFF;
 }
 .header .logo {
+    width: 25%;
     font-size: 40pt;
     margin: 5pt 0;
     cursor: default;
     text-align: center;
+    float: left;
 }
 .header .nav {
+    width: 75%;
     display: flex;
     justify-content: center;
+    float: left;
 }
 .header .nav span {
     cursor: pointer;
     font-size: 20pt;
-    padding: 16pt 25pt;
+    padding: 16pt 20pt;
     transition: all .3s ease;
 }
 .header .nav span:hover {
     background-color: #4E4EEE;
 }
 
+@media only screen and (max-width: 1236px) {
+    .header {
+        height: 63px;
+    }
+    .header .logo {
+        font-size: 2.75em;
+    }
+    .header .nav span {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .header {
+        height: auto;
+    }
+    .header .logo {
+        width: 100%;
+        display: block;
+        float: none;
+    }
+    .header .nav {
+        width: 100%;
+        display: block;
+        float: none;
+        text-align: center;
+    }
+    .header .nav span {
+        display: inline-block;
+    }
+
+    .content {
+        margin-top: 125px;
+    }
+}
+
 .content {
     margin-top: 75px;
     min-height: 100vh;
 }
-.content #product {
+.content .section {
     width: 96%;
     text-align: center;
     padding: 50pt 0;
     margin: 0 2%;
 }
-.content #product .title {
+.content .section .title {
     width: 100%;
     display: block;
 }
-.content #product .title h1 {
+.content .section .title h1 {
     display: inline-block;
     border-bottom: 5pt ridge #4E4EEE;
     padding: 0 25pt;
@@ -75,6 +116,7 @@ a {
 .footer {
     width: 100%;
     text-align: center;
+    color: #ffffff;
 }
 .footer .contact .info {
     cursor: pointer;

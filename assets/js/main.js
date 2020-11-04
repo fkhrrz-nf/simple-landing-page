@@ -7,3 +7,11 @@ document.querySelectorAll('.contact>.info').forEach((e) => {
         }
     })
 })
+
+document.querySelectorAll('.nav>span').forEach((e) => {
+    e.addEventListener('click', () => {
+        document.getElementById(e.getAttribute('data-target')).scrollIntoView({
+            behavior: 'smooth'
+        })
+    })
+})
