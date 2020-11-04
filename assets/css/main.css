@@ -23,15 +23,53 @@ a {
     position: fixed;
     width: 100%;
     height: 75px;
+    color: #FFFFFF;
 }
 .header .logo {
     font-size: 40pt;
+    margin: 5pt 0;
+    cursor: default;
+    text-align: center;
+}
+.header .nav {
+    display: flex;
+    justify-content: center;
+}
+.header .nav span {
+    cursor: pointer;
+    font-size: 20pt;
+    padding: 16pt 25pt;
+    transition: all .3s ease;
+}
+.header .nav span:hover {
+    background-color: #4E4EEE;
 }
 
 .content {
     margin-top: 75px;
-    background-color: rgba(0, 0, 0, .05);
     min-height: 100vh;
+}
+.content #product {
+    width: 96%;
+    text-align: center;
+    padding: 50pt 0;
+    margin: 0 2%;
+}
+.content #product .title {
+    width: 100%;
+    display: block;
+}
+.content #product .title h1 {
+    display: inline-block;
+    border-bottom: 5pt ridge #4E4EEE;
+    padding: 0 25pt;
+}
+.content #product .product-container {
+    width: 250pt;
+    display: inline-block;
+    margin: 10pt;
+    padding-bottom: 10pt;
+    border: 1px solid #dddddd;
 }
 
 .footer {
