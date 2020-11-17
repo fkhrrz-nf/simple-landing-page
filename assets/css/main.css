@@ -145,6 +145,74 @@ a {
     background-color: #ddd;
 }
 
+.content #testi .testi-container {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-end;
+    justify-content: center;
+}
+.content #testi .testi-container .testi-navigator .testi-nav {
+    width: 12px;
+    height: 12px;
+    margin: 2rem 12px;
+    border-radius: 50%;
+    z-index: 10;
+    outline: 6px solid #ccc;
+    outline-offset: -6px;
+    box-shadow: 0 0 0 0 #333, 0 0 0 0 rgba(51, 51, 51, 0);
+    cursor: pointer;
+    appearance: none;
+    backface-visibility: hidden;
+}
+.content #testi .testi-container .testi-navigator .testi-nav:checked {
+    animation: check 0.5s linear forwards;
+}
+.content #testi .testi-container .testi-navigator .testi-nav:checked:nth-of-type(1) ~ .testi-area {
+    transform: translateX(0%);
+}
+.content #testi .testi-container .testi-navigator .testi-nav:checked:nth-of-type(2) ~ .testi-area {
+    transform: translateX(-25%);
+}
+.content #testi .testi-container .testi-navigator .testi-nav:checked:nth-of-type(3) ~ .testi-area {
+    transform: translateX(-50%);
+}
+.content #testi .testi-container .testi-navigator .testi-nav:checked:nth-of-type(4) ~ .testi-area {
+    transform: translateX(-75%);
+}
+/* .container #testi .testi-container .testi-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400%;
+    height: 100%;
+    transition: all 1s ease-out;
+    display: flex;
+    flex-flow: row nowrap;
+} */
+/* .container #testi .testi-container .testi-area .testi-item {
+    height: 100%;
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    flex: 1;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+} */
+@keyframes check {
+    50% {
+        outline-color: #333;
+        box-shadow: 0 0 0 12px #333, 0 0 0 36px rgba(51, 51, 51, 0.2);
+    }
+    100% {
+        outline-color: #333;
+        box-shadow: 0 0 0 0 #333, 0 0 0 0 rgba(51, 51, 51, 0);
+    }
+}
+
 .footer {
     width: 100%;
     text-align: center;
