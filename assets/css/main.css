@@ -196,6 +196,7 @@ input:valid, textarea:valid {
     width: 50%;
     background-color: #4E4EEE;
     border: 1px solid #2C2CCC;
+    color: #fff;
     cursor: pointer;
 }
 @media only screen and (max-width: 680px) {
