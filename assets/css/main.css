@@ -210,22 +210,11 @@ input:valid, textarea:valid {
         text-align: center;
         margin: 25pt 10pt;
         min-width: calc(100% - 20pt);
-        font-style: italic;
     }
 }
 @media only screen and (max-width: 350px) {
     .content {
         margin-top: 175px;
-    }
-    .content #testi .testi-container {
-        display: block;
-    }
-    .content #testi .testi-container .item {
-        display: block;
-        text-align: center;
-        margin: 25pt 10pt;
-        min-width: calc(100% - 20pt);
-        font-style: italic;
     }
 }
 
