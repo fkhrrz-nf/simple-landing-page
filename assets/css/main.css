@@ -98,7 +98,7 @@ input:valid, textarea:valid {
 }
 
 .content {
-    margin-top: 75px;
+    margin-top: 25px;
     min-height: 100vh;
 }
 .content .section {
@@ -199,7 +199,12 @@ input:valid, textarea:valid {
     color: #fff;
     cursor: pointer;
 }
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 900px) {
+    .content {
+        margin-top: 75px;
+    }
+}
+@media only screen and (max-width: 650px) {
     .content {
         margin-top: 125px;
     }
@@ -223,6 +228,7 @@ input:valid, textarea:valid {
     width: 100%;
     text-align: center;
     color: #ffffff;
+    background-color: #3D3DDD;
 }
 .footer .contact .info {
     cursor: pointer;
@@ -231,8 +237,8 @@ input:valid, textarea:valid {
     transition: all .3s ease;
 }
 .footer .contact .info:hover {
-    background-color: #ffffff;
-    color: #5F5FFF;
+    background-color: #3535d1;
+    /* color: #5F5FFF; */
 }
 .footer .contact .info i {
     display: block;
